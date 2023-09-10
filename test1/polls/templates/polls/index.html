@@ -1,0 +1,14 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+
+    <h1>Hello các bạn</h1>
+    <p>Mình là <b>{{ name }}</b></p>
+    <h2>Tài sản của mình có: </h2>
+    <ul>
+        {% for item in taisan %}
+        <li> {{ item }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

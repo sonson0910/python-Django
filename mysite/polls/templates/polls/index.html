@@ -1,0 +1,13 @@
+{% extends 'polls/base.html' %}
+    {% block content %}
+    <h1>Đây là template</h1>
+    <p>Chào các bạn, mình là <b>{{ name }}</b></p>
+    <h2>Tài sản của tôi gồm: </h2>
+    <ul>
+        {%  for item in taisan %}
+            {% if item != "Máy tính" %}
+                <li>{{ item }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endblock %}

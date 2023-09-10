@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="{% static 'polls/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <h1>My website</h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+            <li><a href="#">Link4</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div class="noidung">
+        {% block content123 %}
+        {% endblock %}
+    </div>
+    <div class="content1">
+        {% block content321 %}
+        {% endblock %}
+    </div>
+    <div class="content1">
+        {% block content234 %}
+        {% endblock %}
+    </div>
+</body>
+</html>
